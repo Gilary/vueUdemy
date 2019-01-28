@@ -1,27 +1,26 @@
 <template>
-  <div class="container">  
-    <Titel />
-    <hr>
-    <Server /> 
-    <hr>
-    <Footer />
-  </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12">
+                <app-user></app-user>
+            </div>
+        </div>
+    </div>
 </template>
 
 <script>
-  import Titel from './components/Shared/Titel.vue';
-  import Server from './components/Server/Server.vue';
-  import Footer from './components/Shared/Footer.vue';
-  export default {
-    components:{
-      Titel,
-      Server,
-      Footer
-    }
-  }
+    import User from './components/User.vue';
 
+    export default {
+        components: {
+            appUser: User
+        }
+    }
 </script>
 
 <style>
-
+    div.component {
+        border: 1px solid black;
+        padding: 30px;
+    }
 </style>
