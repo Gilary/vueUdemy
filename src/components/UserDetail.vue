@@ -3,6 +3,7 @@
     <h3>You may view the User Details here</h3>
     <p>Many Details</p>
     <p>User name: {{ switchName() }}</p>
+    <p>User age: {{ userAge }}</p>
     <button @click="resetName()">Reset Naam</button>
     <button @click="resetFn()">Reset Naam</button>
   </div>
@@ -16,7 +17,8 @@
         // required: true,
         // default: 'Til'
       },
-      resetFn: Function
+      resetFn: Function,
+      userAge: Number
     },
     methods: {
       switchName() {
