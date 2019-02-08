@@ -4,7 +4,7 @@
       <div class="col-xs-12"></div>
 			<kwot>
 				<h2 slot="title">{{kwotTitel}}</h2>
-				<p slot="content">kwot kwot</p>
+				<p>kwot kwot</p>
 			</kwot>
     </div>
   </div>
