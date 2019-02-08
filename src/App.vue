@@ -3,8 +3,8 @@
     <div class="row">
       <div class="col-xs-12"></div>
 			<kwot>
-				<h2>{{kwotTitel}}</h2>
-				<p>kwot kwot</p>
+				<h2 slot="title">{{kwotTitel}}</h2>
+				<p slot="content">kwot kwot</p>
 			</kwot>
     </div>
   </div>
@@ -25,5 +25,5 @@ export default {
 </script>
 
 <style>
-	/* styling for slot NOT here but logics all up there */
+	/* styling for slot NOT here but logics all up there/ now you can style here 2*/
 </style>
