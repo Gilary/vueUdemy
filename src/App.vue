@@ -6,7 +6,9 @@
 			<button @click="selectedComponent = 'Author'">Autur</button>
 			<button @click="selectedComponent = 'New'">Nieuw</button>
 			<hr>
-			<component :is="selectedComponent">Waarde</component>
+			<keep-alive>
+				<component :is="selectedComponent">Waarde</component>
+			</keep-alive>
 			<!-- <kwot>
 				<h2 slot="title">{{kwotTitel}}</h2>
 				<p>kwot kwot</p>
@@ -30,7 +32,7 @@ export default {
 		Kwot,
 		Author,
 		New
-		
+
   }
 };
 </script>
