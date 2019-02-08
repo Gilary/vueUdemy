@@ -2,7 +2,10 @@
   <div class="container">
     <div class="row">
       <div class="col-xs-12"></div>
-			<kwot quote="kwot kwot"/>
+			<kwot>
+				<h2>kwot</h2>
+				<p>kwot kwot</p>
+			</kwot>
     </div>
   </div>
 </template>
