@@ -1,42 +1,33 @@
 <template>
-  <div class="container">
-    <div class="row">
-      <div class="col-xs-12"></div>
-			<button @click="selectedComponent = 'Kwot'">Kwot</button>
-			<button @click="selectedComponent = 'Author'">Autur</button>
-			<button @click="selectedComponent = 'New'">Nieuw</button>
-			<hr>
-			<keep-alive>
-				<component :is="selectedComponent">Waarde</component>
-			</keep-alive>
-			<!-- <kwot>
-				<h2 slot="title">{{kwotTitel}}</h2>
-				<p>kwot kwot</p>
-			</kwot> -->
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12">
+                <br>
+                <button class="btn btn-primary">Load Blue Template</button>
+                <button class="btn btn-success">Load Green Template</button>
+                <button class="btn btn-danger">Load Red Template</button>
+                <hr>
+                <app-blue></app-blue>
+                <app-green></app-green>
+                <app-red></app-red>
+            </div>
+        </div>
     </div>
-  </div>
 </template>
 
 <script>
-import Kwot from './components/Kwot.vue';
-import Author from './components/Author.vue';
-import New from './components/New.vue';
-export default {
-	data(){
-		return {
-			kwotTitel:'Kwoty',
-			selectedComponent: 'Kwot'
-		}
-	},
-  components: {
-		Kwot,
-		Author,
-		New
+    import Blue from './components/Blue.vue';
+    import Green from './components/Green.vue';
+    import Red from './components/Red.vue';
 
-  }
-};
+    export default {
+        components: {
+            appBlue: Blue,
+            appGreen: Green,
+            appRed: Red
+        }
+    }
 </script>
 
 <style>
-	/* styling for slot NOT here but logics all up there/ now you can style here 2*/
 </style>
