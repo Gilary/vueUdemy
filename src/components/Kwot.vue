@@ -18,4 +18,9 @@ export default {
 		margin: 30px auto;
 		text-align:center;
 	}
+	
+	/* styling for slot here */
+	h2{
+		color:green;
+	}
 </style>

@@ -3,7 +3,7 @@
     <div class="row">
       <div class="col-xs-12"></div>
 			<kwot>
-				<h2>kwot</h2>
+				<h2>{{kwotTitel}}</h2>
 				<p>kwot kwot</p>
 			</kwot>
     </div>
@@ -13,6 +13,11 @@
 <script>
 import Kwot from './components/Kwot.vue';
 export default {
+	data(){
+		return {
+			kwotTitel:'Kwoty'
+		}
+	},
   components: {
     Kwot
   }
@@ -20,4 +25,5 @@ export default {
 </script>
 
 <style>
+	/* styling for slot NOT here but logics all up there */
 </style>
