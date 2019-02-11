@@ -7,7 +7,7 @@
                 <button class="btn btn-success" @click="changeComponent = 'appGreen'">Load Green Template</button>
                 <button class="btn btn-danger" @click="changeComponent = 'appRed'">Load Red Template</button>
                 <hr>
-                <app-blue>
+                <!-- <app-blue>
                   <h1 slot="blue">blue</h1>
                 </app-blue>
                 <app-green>
@@ -15,8 +15,8 @@
                 </app-green>
                 <app-red>
                   <h1 slot="red">red</h1>
-                </app-red>
-                <!-- <component :is="changeComponent"></component> -->
+                </app-red> -->
+                <component :is="changeComponent"></component>
             </div>
         </div>
     </div>
